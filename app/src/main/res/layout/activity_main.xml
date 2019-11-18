@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_padding">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:text="@string/help_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/result_background"
+        android:layout_marginTop="@dimen/margin_relative_layout"
+        android:layout_marginBottom="@dimen/margin_relative_layout">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="@dimen/width_result_text"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_result"
+            android:layout_marginBottom="@dimen/margin_result"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/button_copy"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:text="qQwWeE"
+            />
+
+        <ImageButton
+            android:id="@+id/button_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy_black_24dp"
+            android:padding="@dimen/copy_button_padding"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/quality"
+        android:layout_width="@dimen/indicator_width"
+        android:layout_height="@dimen/indicator_height"
+        android:src="@drawable/quality_indicator"
+        />
+
+    <TextView
+        android:id="@+id/quality_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+
+        android:text="@string/quality_hint"
+        />
+
+
+
+    <EditText
+        android:id="@+id/sourse_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="йЙцЦуУ"/>
+
+    <CheckBox
+        android:id="@+id/check_uppercase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/check_box_margin_top"
+        android:text="@string/check_uppercase" />
+    <CheckBox
+        android:id="@+id/check_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_number" />
+    <CheckBox
+        android:id="@+id/check_symbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_symbol" />
+    <SeekBar
+        android:id="@+id/seek_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_padding"
+        android:max="10"
+        />
+
+    <TextView
+        android:id="@+id/size_password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/size_new_password_start"
+        tools:text="@string/size_new_password_start"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/result_background"
+        android:layout_marginTop="@dimen/margin_relative_layout"
+        android:layout_marginBottom="@dimen/margin_relative_layout">
+
+
+        <TextView
+            android:id="@+id/result_text_new_password"
+            android:layout_width="@dimen/width_result_text"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_result"
+            android:layout_marginBottom="@dimen/margin_result"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/button_copy_new_password"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            tools:text="qQwWeE"
+            />
+
+        <ImageButton
+            android:id="@+id/button_copy_new_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copy_black_24dp"
+            android:padding="@dimen/copy_button_padding"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/generate_password_background"
+        android:text="@string/generate_password"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="margin_result">12dp</dimen>
+    <dimen name="copy_button_padding">16dp</dimen>
+    <dimen name="result_stroke_radius">8dp</dimen>
+    <dimen name="result_stroke_width">4dp</dimen>
+    <dimen name="indicator_width">128dp</dimen>
+    <dimen name="indicator_height">32dp</dimen>
+    <dimen name="check_box_margin_top">20dp</dimen>
+    <dimen name="margin_relative_layout">12dp</dimen>
+    <dimen name="width_result_text">0dp</dimen>
+</resources>
